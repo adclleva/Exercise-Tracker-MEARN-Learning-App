@@ -8,6 +8,26 @@ function CreateExercise() {
   const [date, setDate] = useState(new Date())
   const [users, setUsers] = useState([])
 
+
+  function onChangeUser(e) {
+    const { value } = e.target
+    setUsername(value)
+  }
+
+  function onChangeDescription(e) {
+    const { value } = e.target
+    setDescription(value)
+  }
+
+  function onChangeDuration(e) {
+    const { value } = e.target
+    setDuration(value)
+  }
+
+  function onChangeDate(date) {
+    setDate(date)
+  }
+
   return (
     <div>
       <h1>Create Exercise</h1>
