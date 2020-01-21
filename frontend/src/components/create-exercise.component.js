@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
+import { Redirect } from 'react-router-dom'
 import DatePicker from 'react-datepicker'
 import "react-datepicker/dist/react-datepicker.css"
 
@@ -119,6 +120,9 @@ function CreateExercise() {
             />
         </div>
       </form>
+      {
+
+      }
     </div>
   )
 }
